@@ -1,0 +1,122 @@
+step1:
+install tailwindcss and create react app from tailwind.css official website
+
+add google fonts from official google fonts website 
+
+
+
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+    fontFamily:{
+      signature:["Great Vibes"],
+    }
+  },
+  plugins: [],
+
+
+
+
+
+  import React from 'react'
+
+const Navbar = () => {
+
+  const links=[
+    {
+      id:1,
+      link:'home'
+    },
+
+    {
+      id:2,
+      link:'about'
+    },
+
+    {
+      id:3,
+      link:'portgfolio'
+    },
+
+    {
+      id:4,
+      link:'home'
+    },
+
+    {
+      id:5,
+      link:'home'
+    }
+  ];
+  return (
+    <div className="flex justify-between fixed w-full  bg-black h-20  text-white ">
+      
+      <div >
+        <h1 >mohammed abdul rahaman</h1>
+      </div>
+      
+     
+        <div>
+               <ul className='flex'>
+           {links.map(({id,link})=>(
+          
+            <li
+            key={id}
+            className="px-" >
+              {link}
+            </li>
+            ))}
+         
+          </ul>
+        </div>
+        
+      </div>
+  )
+}
+
+export default Navbar
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+#button1 {
+    padding: 20px 10px;
+    border-radius: 20%;
+    background-color: #e0e0e0;
+}
+
+#button2 {
+    padding: 20px 10px;
+    border-radius: 20%;
+    background-color: #6fcf97;
+}
+
+#button3 {
+    padding: 20px 10px;
+    border-radius: 20%;
+    background-color: #56ccf2;
+}
+
+#button4 {
+    padding: 20px 10px;
+    border-radius: 20%;
+    background-color: #bb6bd9;
+}
+
+#background {
+    background-color: #222222;
+    width: 50%;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
